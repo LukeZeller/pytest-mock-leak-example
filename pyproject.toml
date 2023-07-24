@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pytest-mock-bug-repro"
+version = "0.1.0"
+description = ""
+authors = ["rzeller_ramp <rzeller@ramp.com>"]
+readme = "README.md"
+packages = [{include = "pytest_mock_bug_repro"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
