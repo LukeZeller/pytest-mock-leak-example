@@ -18,7 +18,7 @@ def user_can_get_widget(user_id):
 
 
 def issue_widget(user_id):
-    from pytest_mock_bug_repro.widget_utils import rotate_widget
+    from widget_app.widget_utils import rotate_widget
 
     if user_can_get_widget(user_id):
         ret = create_widget()
@@ -28,7 +28,7 @@ def issue_widget(user_id):
 
 
 def issue_widget_with_name(user_id, name):
-    from pytest_mock_bug_repro.widget_utils import create_widget_with_name
+    from widget_app.widget_utils import create_widget_with_name
 
     if user_can_get_widget(user_id):
         ret = create_widget_with_name(name)
