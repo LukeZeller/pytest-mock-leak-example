@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "pytest-mock-bug-repro"
+name = "pytest-mock-leak-example"
 version = "0.1.0"
 description = ""
 authors = ["rzeller_ramp <rzeller@ramp.com>"]
 readme = "README.md"
-packages = [{include = "pytest_mock_bug_repro"}]
+packages = [{ include = "widget_app" }]
 
 [tool.poetry.dependencies]
 python = ">=3.11"
